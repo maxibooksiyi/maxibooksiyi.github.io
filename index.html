@@ -2,20 +2,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>我的博客</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>maxibooksiyi 的博客</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Loading...</div>
   <script>
     window.$docsify = {
-      name: '我的博客',
+      name: 'alice',
       repo: 'https://github.com/maxibooksiyi/maxibooksiyi.github.io',
-      loadnavbar: true,
-      loadSidebar: true,
-      mergeNavbar: true,
-      search: 'auto'
+      homepage: 'docs/README.md',
+      loadNavbar: true,
+      loadSidebar: 'docs/README.md',
+      search: 'auto',
+      alias: {
+        '/.*/_sidebar.md': '/docs/README.md'
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
